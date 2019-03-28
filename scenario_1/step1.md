@@ -1,9 +1,16 @@
-A Wind River Katacoda scenario is a series of Markdown files, bash scripts and a JSON file to define how your scenario should be configured, the text for the scenario and any automation required.
+Multilib in WRLinux 10.18
 
-## Task
+## Multilib is enabled by default in WrLinux
 
-Clone our example repository that contains the set of documentation with the following command:
+Multilib is enabled by default in WRLinux 10.18 for 64-bit bsps, including qemux86-64, qemuarm64, qemumips64 and other real bsps such as intel-x86-64 and intel-socfpga-64.
 
+It includes "multilib.conf" to support multilib but reset variable "MULTILIBS" to disable multilib for all bsps in a common configure file wrlinux/wrlinux-distro/conf/distro/wrlinux-common.inc.
+
+   # Multilib configuration
+      MULTILIBS ?= ""
+      require conf/multilib.conf
+
+##############
 `git clone https://github.com/katacoda/scenario-examples.git katacoda-scenario-examples`{{execute}}
 
 Within the repository, you will see a set of examples of implementing various Katacoda functionality.
