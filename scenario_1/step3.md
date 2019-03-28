@@ -1,4 +1,4 @@
-To help create the index.json and scenario structure, Katacoda has developed a command line interactive (CLI) to help create and manage scenarios.
+To help create the Wind River index.json and scenario structure, Katacoda has developed a command line interactive (CLI) to help create and manage scenarios.
 
 ## Install CLI
 

@@ -1,26 +1,29 @@
 {
-  "title": "Creating Your First Katacoda Scenario",
-  "description": "Wind River - Learn how to create your first Katacoda scenario",
+  "pathwayTitle": "LTS-18 Tutorials",
+  "title": "Multilib in WRLinux 10.18",
+  "description": "Learn how to create Multilibs in WRLinux 10.18",
+  "difficulty": "intermediate",
+  "time": "5-10 minutes",
   "details": {
     "steps": [
       {
-        "title": "Step 1 - Scenario Structure",
+        "title": "Step 1 - Scenario Structure - WR",
         "text": "step1.md"
       },
       {
-        "title": "Step 2 - Scenario Syntax",
+        "title": "Step 2 - Scenario Syntax - WR",
         "text": "step2.md"
       },
       {
-        "title": "Step 3 - CLI",
+        "title": "Step 3 - CLI - WR",
         "text": "step3.md"
       },
       {
-        "title": "Step 4 - VS Code Extension",
+        "title": "Step 4 - VS Code Extension - WR",
         "text": "step4.md"
       },
       {
-        "title": "Step 5 - WebHooks",
+        "title": "Step 5 - WebHooks - WR",
         "text": "step5.md"
       }
     ],
@@ -29,12 +32,22 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "setup.sh", "target": "~/wrlinux-x/", "chmod": "+x"},
+        {"file": "oe-init-build-env", "target": "~/", "chmod": "+x"},
+        {"file": "bitbake", "target": "~/layers/oe-core/bitbake/bin/", "chmod": "+x"},
+        {"file": "environment-setup-x86_64-wrlinuxsdk-linux", "target": "~/", "chmod": "+x"},
+        {"file": "setup.sh", "target": "~/meta/", "chmod": "+x"},
+        {"file": "setup.sh", "target": "~/bin/", "chmod": "+x"}
+      ]
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "git"
+    "imageid": "ubuntu"
   }
 }
