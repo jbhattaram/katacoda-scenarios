@@ -31,7 +31,3 @@ Both os-release and lib32-os-release install file /etc/os-release which is a sym
 It is not proper to use multilib_script.bbclass to resolve the file conflict. The right solution is make package os-release install file to ${nonarch_libdir}/os-release. Then /etc/os-release are identical and no more file conflict.
 
 </p>
-
-It is created to deal with binary and executable script file conflicts so don't abuse it. A wrong example is about package os-release. Both os-release and lib32-os-release install file /etc/os-release which is a symlink links to ${libdir}/os-release. Though the content of files ${libdir}/os-release are same, it still causes file conflict of /etc/os-release because ${libdir} are different. It is not proper to use multilib_script.bbclass to resolve the file conflict. The right solution is make package os-release install file to ${nonarch_libdir}/os-release. Then /etc/os-release are identical and no more file conflict.
-
-

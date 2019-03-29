@@ -17,5 +17,5 @@ For 64-bit bsps, it sets proper multilib configure in bsp specified configure fi
 
 If you want to disable multilib, it could be done by reset MULTILIBS in conf/local.conf.
 
-`$ echo 'MULTILIBS = ""' >>conf/local.conf`{{execute}}
+`echo 'MULTILIBS = ""' >> conf/local.conf`{{execute}}
 
