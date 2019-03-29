@@ -24,13 +24,13 @@ Don't worry, running populate sdk/esdk with corresponding non-multilib image(wrl
 Following steps help to build multilib image lib32-wrlinux-image-glibc-core and populate sdk. lib32-wrlinux-image-glibc-core is 32-bit userspace image and works with 64-bit linux kernel for 64-bit bsps. And the sdk provides both 32-bit and 64-bit build environment.
 </p>
 
-      \# setup project
+      # setup project
 `$ ./wrlinux-x/setup.sh --machines=qemux86-64 --dl-layers --accept-eula=yes`{{execute}}
 `$ source  oe-init-build-env`{{execute}}
 
-      \# build multilib image
+      # build multilib image
 `$ bitbake lib32-wrlinux-image-glibc-core`{{execute}}
 
-      \# populate sdk
+      # populate sdk
 `$ bitbake wrlinux-image-glibc-core -c populate_sdk`{{execute}}
 
