@@ -6,7 +6,7 @@ Multilib is enabled by default in WRLinux 10.18 for 64-bit bsps, including qemux
 
 It includes "multilib.conf" to support multilib but reset variable "MULTILIBS" to disable multilib for all bsps in a common configure file wrlinux/wrlinux-distro/conf/distro/wrlinux-common.inc.
 
-\ #Multilib configuration
+   \ #Multilib configuration
       MULTILIBS ?= ""
       require conf/multilib.conf
 
